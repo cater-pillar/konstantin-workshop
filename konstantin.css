@@ -1,0 +1,420 @@
+* {
+    box-sizing: border-box;
+    color: #1b1c1e;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f6f6f6;
+}
+header {
+    padding: 8px 0px;
+}
+.languages-holder {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.languages-holder img {
+    align-self: flex-end;
+    width: 30px;
+    height: 30px;
+    margin: 7px 7px 2px 2px; 
+}
+.languages-holder a {
+    width: 62px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    background-color: #1b1c1e;
+    transition: 400ms;
+    color: #f6f6f6;
+    padding: 3px 1px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 7px 2px 2px;
+    display: none;
+}
+.languages-holder div {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 7px 7px 2px 2px; 
+}
+
+.languages-holder:hover a {
+    display: inline;
+}
+.logo-holder img {
+    height: 90px;
+    display: block;
+    margin: 35px auto 20px auto;
+}
+.nav-holder {
+    display: flex;
+    width: 314px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #1b1c1e;
+    box-shadow: #1b1c1e 1px 1px 1px;
+}
+.nav-holder a {
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px 2px;
+    font-family: Arial, sans-serif;
+    transition: 400ms;
+    font-size: 14px;
+}
+.nav-holder a:hover {
+    background-color: #1b1c1e;
+    color: #f6f6f6;
+}
+.slogan {
+    margin: 0px;
+    background-image: url("materijal/radionica/background-mobile1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+}
+.slogan h1 {
+    margin: 0px 8px;
+    padding-top: 70px;
+    width: 95%;
+    text-align: center;
+    color: #f6f6f6;
+    font-size: 42px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: bold;
+    text-shadow: #1b1c1e 3px 3px 3px;
+}
+.text-holder {
+    font-family: Georgia, serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 25px;
+}
+
+h2 {
+    text-align: center;
+    background-color: #1b1c1e;
+    color: #f6f6f6;
+}
+.text-holder p {
+    margin: 4px 0px;
+    text-align: justify;
+}
+.text-holder span {
+    font-weight: bold;
+    font-size: 18px;
+}
+.gallery {
+    width: 100%;
+    position: relative;
+}
+.gallery button {
+    border: none;
+    color: #f6f6f6;
+    background-color: #1b1c1e;
+    text-decoration: none;
+    position: absolute;
+    top: 46%;
+    font-size: 15px;
+    z-index: 1;
+    padding: 5px 10px 7px 10px;
+}
+.before, .after {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 30px;
+    color:#1b1c1e;
+    width: 280px;
+    margin: 0px auto;
+    padding: 0px;
+}
+.after {
+    text-align: right;
+}
+.next {
+    right: 0px;
+}
+.prev {
+    left: 0px;
+}
+.slide-holder {
+    display: none;
+}
+.fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+}
+      
+@keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+}
+.slide-horizontal,
+.slide-vertical,
+.slide-3img {
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slide-horizontal {
+    flex-direction: column;
+    justify-content: space-around;
+}
+.slide-vertical {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.slide-3img {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.img-horizontal {
+    box-shadow:  3px 4px 9px 0px #53565c;
+    width: 280px;
+}
+.img-vertical {
+    box-shadow:  2px 3px 7px 0px #53565c;
+    width: 130px;
+}
+.slike7 {
+    box-shadow:  2px 3px 7px 0px #53565c;
+    width: 230px;
+}
+.slike8 {
+    box-shadow:  2px 3px 7px 0px #53565c;
+    width: 130px;
+}
+.slike4 {
+    box-shadow:  2px 3px 7px 0px #53565c;
+    width: 130px;
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.wrapper iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    border: none;
+}
+footer {
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #1b1c1e;
+    color: #f6f6f6;
+    margin-top: 20px;
+}
+span svg {
+    height: 15px; 
+    width: 15px; 
+    vertical-align: middle;
+}
+
+@media only screen and (min-width : 480px) {
+    * {
+        font-size: 18px;
+    }
+    .languages-holder a,
+    .languages-holder div {
+        width: 68px;
+    }
+    .logo-holder img {
+        height: 120px;
+        margin-top: 20px;
+    }
+     .nav-holder {
+        width: 409px;
+        margin-top: 20px;
+    }
+    .nav-holder a {
+        padding: 8px 8px;
+        font-size: 18px;
+    }
+    .slogan {
+        margin-top: 20px;
+    } 
+   
+    .text-holder {
+        line-height: 30px;
+        font-size: 18px;
+    }  
+    h2 {
+        padding: 10px 0;
+        font-size: 25px;
+        margin-top: 20px;
+    } 
+    .text-holder span {
+        font-size: 20px;
+    } 
+    .gallery {
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gallery button {
+        top: 47%;
+    }
+    .slide-horizontal,
+    .slide-vertical,
+    .slide-3img {
+        width: 400px;
+        height: 540px;
+    }
+    .img-horizontal {
+        width: 400px;
+    }
+    .img-vertical {
+        width: 180px;
+    }
+    .slike4 {
+        width: 180px;
+    }
+    .slike7 {
+        width: 310px;
+    }
+    .slike8 {
+        width: 180px;
+    }
+    footer {
+        margin-top: 20px;
+    } 
+    span svg {
+        height: 16px; 
+        width: 16px; 
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    * {
+        font-size: 20px;
+    }
+    header {
+        padding: 8px 0px;
+    }
+    .languages-holder {
+        flex-direction: row-reverse;
+    }
+    .languages-holder img {
+        display: none;
+    }
+    .languages-holder a {
+        display: inline-block;
+        font-size: 14px;
+        padding: 5px;
+        margin: 7px 7px 2px 2px;
+        width: 80px;
+    }
+    .languages-holder a:hover {
+        font-weight: bold;
+    }
+    .logo-holder img {
+        height: 150px;
+        margin-top: 30px;
+    }
+    .nav-holder {
+        width: 699px;
+        margin-top: 50px;
+    }
+    .nav-holder a {
+        padding: 10px 10px;
+        font-size: 18px;
+    }
+    .slogan {
+        height: 500px;
+        margin-top: 50px;
+        background-image: url("materijal/radionica/background-desktop1.jpg");
+    }
+    .slogan h1 {
+        font-size: 70px;
+        text-shadow: #1b1c1e 3px 3px 3px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text-holder, 
+    .video-holder {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 30px;
+    }
+    .text-holder p, 
+    .text-holder li, 
+    .video-holder {
+        margin-bottom: 10px;
+    }
+    h2 {
+        padding: 20px 0;
+        font-size: 30px;
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+    .text-holder span {
+        font-size: 22px;
+    }
+    .gallery {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .before, .after {
+        font-size: 40px;
+        width: 450px;
+    }
+    .slide-horizontal,
+    .slide-vertical,
+    .slide-3img
+     {
+        width: 450px;
+        height: 550px;
+    }
+    .img-horizontal {
+        width: 450px;
+    }
+    .img-vertical {
+        width: 200px;
+    }
+    .slike4 {
+        width: 200px;
+    }
+    .slike7 {
+        width: 370px;
+    }
+    .slike8 {
+        width: 200px;
+    }
+    footer {
+        margin-top: 50px;
+    }
+    span svg {
+        height: 19px; 
+        width: 19px; 
+    }
+}
